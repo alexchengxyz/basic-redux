@@ -1,0 +1,109 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "off",
+      "react/state-in-constructor": "off",
+      "react/jsx-filename-extension": ["warn", {
+        "extensions": [".js", ".jsx"]
+      }],
+      "import/no-extraneous-dependencies": "off",
+      "react/prop-types": "off",
+      "class-methods-use-this": "off",
+      "no-unused-expressions": ["warn", {
+        "allowShortCircuit": true
+      }],
+      "no-use-before-define": "off",
+      "jsx-a11y/label-has-for": "off",
+      "jsx-a11y/label-has-associated-control": "off",
+      "newline-before-return": "error",
+      "space-before-blocks": 2, // {} 前必須有空格，例如 function() {}
+      "space-in-parens": ["error", "never"], // 括弧內不要加空格
+      "react/jsx-props-no-spreading": "off",
+      "no-console": "off",
+      "react/no-array-index-key": "off",
+      "comma-spacing": ["error", {
+        "before": false,
+        "after": true
+      }], // 逗號後面要加一個空白
+      "space-unary-ops": [
+        2,
+        {
+          "words": true,
+          "nonwords": false,
+          "overrides": {
+            "new": false,
+            "++": true
+          }
+        }
+      ], // 一元運算子後面要加空格
+      "quote-props": [2, "as-needed"], //物件的屬性名需要統一【 雙引號、單引號、不加】三個選一
+      "no-multiple-empty-lines": [1, {
+        "max": 1
+      }], // 不能有多個空行,最多兩行
+      "no-trailing-spaces": 2, // 行尾不留空格
+      "jsx-quotes": 2, //強制所有不包含雙引號的 JSX 屬性值使用雙引號
+      "key-spacing": 2, // 物件key之後，冒號前不允許有空格; value前需要有空格
+      "semi-spacing": ["error", {
+        "before": false,
+        "after": true
+      }], // 分號後面要加空格，前面不要加
+      "keyword-spacing": ["error", {
+        "before": true,
+        "after": true
+      }], //要求在關鍵字之前、之後都至少有一個空格
+      "comma-style": ["error", "last"], //要求逗號放在陣列元素、物件屬性或變數宣告之後，且在同一行
+      "object-curly-spacing": ["error", "always"], // 强制物件在花括號中使用一致的空格
+      "template-curly-spacing": ["error", "never"], // 樣板語法不加空格
+      "no-multi-spaces": 2, // 禁止出現多個空格
+      // "newline-after-var": 1, // 變數定義後增加空行 warn
+      // "arrow-parens": [2, "always"], // 要求箭頭函式的引數使用圓括號
+      // "object-property-newline": 2, // 維持物件屬性宣告時，換行的一致性
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "always-multiline"
+        }
+      ], // 要求或禁止尾行加逗號
+      "indent": [
+        "error", 2, {
+          "SwitchCase": 1,
+          "VariableDeclarator": {
+            "var": 2,
+            "let": 2,
+            "const": 3
+          },
+          "MemberExpression": 1,
+          "ArrayExpression": 1,
+          "ObjectExpression": 1,
+          "ImportDeclaration": 1,
+          "flatTernaryExpressions": false
+        }
+      ],
+      "semi": ["error", "always"]
+    }
+}
