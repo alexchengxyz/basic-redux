@@ -32,3 +32,11 @@ npm install prettier eslint-plugin-prettier eslint-config-prettier --save-dev
 - prettier/prettier": "error"
 
 eslint 規則設定請參考 .eslintrc.json
+
+## Redux 依賴套件
+
+- redux-devtools-extension
+- redux-logger
+- redux-thunk
+
+[參考文件](https://github.com/gopinav/React-Redux-Tutorials/tree/master/redux-demo)

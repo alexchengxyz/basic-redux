@@ -27,6 +27,7 @@
       "react/jsx-filename-extension": ["warn", {
         "extensions": [".js", ".jsx"]
       }],
+      "arrow-body-style": ["error", "always"],
       "import/no-extraneous-dependencies": "off",
       "react/prop-types": "off",
       "class-methods-use-this": "off",
